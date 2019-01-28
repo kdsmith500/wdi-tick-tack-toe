@@ -28,6 +28,7 @@ const c2o = document.querySelector("#c2o");
 const c3 = document.querySelector(".c3");
 const c3x = document.querySelector("#c3x");
 const c3o = document.querySelector("#c3o");
+const reset = document.querySelector("#reset");
 
 /////////
 
@@ -37,6 +38,38 @@ let cellStatus = {
     b: [null, null, null],
     c: [null, null, null],
 };
+
+reset.addEventListener('click', function() {
+    whoseTurn = true;
+    cellStatus.a[0] = null;
+    cellStatus.a[1] = null;
+    cellStatus.a[2] = null;
+    cellStatus.b[0] = null;
+    cellStatus.b[1] = null;
+    cellStatus.b[2] = null;
+    cellStatus.c[0] = null;
+    cellStatus.c[1] = null;
+    cellStatus.c[2] = null;
+    a1x.style.opacity = 0;
+    a1o.style.opacity = 0;
+    a2x.style.opacity = 0;
+    a2o.style.opacity = 0;
+    a3x.style.opacity = 0;
+    a3o.style.opacity = 0;
+    b1x.style.opacity = 0;
+    b1o.style.opacity = 0;
+    b2x.style.opacity = 0;
+    b2o.style.opacity = 0;
+    b3x.style.opacity = 0;
+    b3o.style.opacity = 0;
+    c1x.style.opacity = 0;
+    c1o.style.opacity = 0;
+    c2x.style.opacity = 0;
+    c2o.style.opacity = 0;
+    c3x.style.opacity = 0;
+    c3o.style.opacity = 0;
+    console.log("Reset!")
+});
 
 tickTackToe.addEventListener('click', function() {
     if (cellStatus.a[0] === 1 && cellStatus.a[1] === 1 && cellStatus.a[2] === 1) {
