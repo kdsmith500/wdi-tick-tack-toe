@@ -28,7 +28,7 @@ const c2o = document.querySelector("#c2o");
 const c3 = document.querySelector(".c3");
 const c3x = document.querySelector("#c3x");
 const c3o = document.querySelector("#c3o");
-const reset = document.querySelector("#reset");
+const reset = document.querySelector("#spoon");
 
 /////////
 
@@ -73,39 +73,39 @@ reset.addEventListener('click', function() {
 
 tickTackToe.addEventListener('click', function() {
     if (cellStatus.a[0] === 1 && cellStatus.a[1] === 1 && cellStatus.a[2] === 1) {
-        return console.log("Player 1 Wins!");
+        return alert("Player 1 Wins!");
     } else if (cellStatus.b[0] === 1 && cellStatus.b[1] === 1 && cellStatus.b[2] === 1) {
-        return console.log("Player 1 Wins!");
+        return alert("Player 1 Wins!");
     } else if (cellStatus.c[0] === 1 && cellStatus.c[1] === 1 && cellStatus.c[2] === 1) {
-        return console.log("Player 1 Wins!");
+        return alert("Player 1 Wins!");
     } else if (cellStatus.a[0] === 1 && cellStatus.b[0] === 1 && cellStatus.c[0] === 1) {
-        return console.log("Player 1 Wins!");
+        return alert("Player 1 Wins!");
     } else if (cellStatus.a[1] === 1 && cellStatus.b[1] === 1 && cellStatus.c[1] === 1) {
-        return console.log("Player 1 Wins!");
+        return alert("Player 1 Wins!");
     } else if (cellStatus.a[2] === 1 && cellStatus.b[2] === 1 && cellStatus.c[2] === 1) {
-        return console.log("Player 1 Wins!");
+        return alert("Player 1 Wins!");
     } else if (cellStatus.a[0] === 1 && cellStatus.b[1] === 1 && cellStatus.c[2] === 1) {
-        return console.log("Player 1 Wins!");
+        return alert("Player 1 Wins!");
     } else if (cellStatus.a[2] === 1 && cellStatus.b[1] === 1 && cellStatus.c[0] === 1) {
-        return console.log("Player 1 Wins!");
+        return alert("Player 1 Wins!");
     } else if (cellStatus.a[0] === 2 && cellStatus.a[1] === 2 && cellStatus.a[2] === 2) {
-        return console.log("Player 2 Wins!");
+        return alert("Player 2 Wins!");
     } else if (cellStatus.b[0] === 2 && cellStatus.b[1] === 2 && cellStatus.b[2] === 2) {
-        return console.log("Player 2 Wins!");
+        return alert("Player 2 Wins!");
     } else if (cellStatus.c[0] === 2 && cellStatus.c[1] === 2 && cellStatus.c[2] === 2) {
-        return console.log("Player 2 Wins!");
+        return alert("Player 2 Wins!");
     } else if (cellStatus.a[0] === 2 && cellStatus.b[0] === 2 && cellStatus.c[0] === 2) {
-        return console.log("Player 2 Wins!");
+        return alert("Player 2 Wins!");
     } else if (cellStatus.a[1] === 2 && cellStatus.b[1] === 2 && cellStatus.c[1] === 2) {
-        return console.log("Player 2 Wins!");
+        return alert("Player 2 Wins!");
     } else if (cellStatus.a[2] === 2 && cellStatus.b[2] === 2 && cellStatus.c[2] === 2) {
-        return console.log("Player 2 Wins!");
+        return alert("Player 2 Wins!");
     } else if (cellStatus.a[0] === 2 && cellStatus.b[1] === 2 && cellStatus.c[2] === 2) {
-        return console.log("Player 2 Wins!");
+        return alert("Player 2 Wins!");
     } else if (cellStatus.a[2] === 2 && cellStatus.b[1] === 2 && cellStatus.c[0] === 2) {
-        return console.log("Player 2 Wins!");
+        return alert("Player 2 Wins!");
     } else if (cellStatus.a[0] !== null && cellStatus.a[1] !== null && cellStatus.a[2] !== null && cellStatus.b[0] !== null && cellStatus.b[1] !== null && cellStatus.b[2] !== null && cellStatus.c[0] !== null && cellStatus.c[1] !== null && cellStatus.c[2] !== null) {
-        return console.log("Cat's Game!")
+        return alert("Cat's Game!")
     }
 });
 
