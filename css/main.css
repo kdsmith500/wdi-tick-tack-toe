@@ -2,17 +2,19 @@ body {
     display: grid;
     grid-template-columns: 1fr .25fr;
     grid-template-rows: .33fr 1fr;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
 }
 
 .tickTackToe {
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px;
     background: rgba(0,0,0,0);
     z-index: 1;
     position: absolute;
-    top: 515px;
-    left: 415px;
+    top: 545px;
+    left: 445px;
 }
 
 .tickTackToe > div {
@@ -28,19 +30,19 @@ header {
 
 .top-left {
     position: absolute;
-    left: 10%;
+    left: 5%;
     top: 40px;
 }
 
 .top-center {
     position: absolute;
     top: -50px;
-    left: 30%;
+    left: 25%;
 }
 
 .top-right {
     position: absolute;
-    left: 70%;
+    left: 65%;
 }
 
 main {
@@ -50,8 +52,8 @@ main {
 
 .milkBowl {
     position: absolute;
-    top: 275px;
-    left: 175px;
+    top: 300px;
+    left: 200px;
 }
 
 aside {
@@ -62,7 +64,7 @@ aside {
 #spoon {
     position: absolute;
     top: 375px;
-    right: 10%;
+    right: 15%;
 }
 
 #a1x {
@@ -159,71 +161,71 @@ aside {
     grid-column: 1;
     grid-row: 1;
     background-color: rgba(0,0,0,0);
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
+    /* border-bottom: 1px ridge wheat; */
+    /* border-right: 1px ridge wheat; */
 }
 
 .a2 {
     grid-column: 2;
     grid-row: 1;
     background-color: rgba(0,0,0,0);
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    /* border-bottom: 1px ridge wheat; */
+    /* border-left: 1px ridge wheat; */
+    /* border-right: 1px ridge wheat; */
 }
 
 .a3 {
     grid-column: 3;
     grid-row: 1;
     background-color: rgba(0,0,0,0);
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+    /* border-left: 1px ridge wheat; */
+    /* border-bottom: 1px ridge wheat; */
 }
 
 .b1 {
     grid-column: 1;
     grid-row: 2;
     background-color: rgba(0,0,0,0);
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    /* border-right: 1px ridge wheat; */
+    /* border-bottom: 1px ridge wheat; */
+    /* border-top: 1px ridge wheat; */
 }
 
 .b2 {
     grid-column: 2;
     grid-row: 2;
     background-color: rgba(0,0,0,0);
-    border: 1px solid black;
+    /* border: 1px ridge wheat; */
 }
 .b3 {
     grid-column: 3;
     grid-row: 2;
     background-color: rgba(0,0,0,0);
-    border-left: 1px solid black;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    /* border-left: 1px ridge wheat; */
+    /* border-top: 1px ridge wheat; */
+    /* border-bottom: 1px ridge wheat; */
 }
 .c1 {
     grid-column: 1;
     grid-row: 3;
     background-color: rgba(0,0,0,0);
-    border-right: 1px solid black;
-    border-top: 1px solid black;
+    /* border-right: 1px ridge wheat; */
+    /* border-top: 1px ridge wheat; */
 }
 .c2 {
     grid-column: 2;
     grid-row: 3;
     background-color: rgba(0,0,0,0);
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-    border-top: 1px solid black;
+    /* border-right: 1px ridge wheat; */
+    /* border-left: 1px ridge wheat; */
+    /* border-top: 1px ridge wheat; */
 }
 .c3 {
     grid-column: 3;
     grid-row: 3;
     background-color:rgba(0,0,0,0);
-    border-top: 1px solid black;
-    border-left: 1px solid black;
+    /* border-top: 1px ridge wheat; */
+    /* border-left: 1px ridge wheat; */
 }
 
 @media only screen and (max-width: 1150px) {
@@ -234,14 +236,7 @@ aside {
 
 }
 
-@media only screen and (max-width: 1000px) {
-
-    #spoon {
-        right: -20%;
-    }
-}
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 975px) {
 
     #spoon {
         left: 10%;
